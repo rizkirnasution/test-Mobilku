@@ -35,6 +35,6 @@ app.use((err,req,res, next)=>{
   next()
 })
 
-app.listen(8080, () => {
+app.listen(`${PORT}`, () => {
   console.log(`server running on http://${DB_HOST}:${PORT}`)
 })
